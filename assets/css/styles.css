@@ -1,0 +1,55 @@
+:root {
+  --cf-orange: #f48120;
+  --cf-navy: #050d1d;
+  --cf-blue: #0051c3;
+  --cf-gray: #f3f3f3;
+}
+
+.bg-cf-navy {
+  background-color: var(--cf-navy) !important;
+}
+
+.text-cf-orange {
+  color: var(--cf-orange) !important;
+}
+
+.btn-cf-orange {
+  background-color: var(--cf-orange);
+  border-color: var(--cf-orange);
+  color: #fff;
+}
+
+.btn-cf-orange:hover {
+  background-color: #e67300;
+  border-color: #e67300;
+  color: #fff;
+}
+
+.btn-outline-light-cf {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+
+.btn-outline-light-cf:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+  color: #fff;
+}
+
+.network-map-container {
+}
+
+.map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, transparent 20%, rgba(5, 13, 29, 0.05) 80%);
+  pointer-events: none;
+}
+
+.bg-cf-orange {
+  background-color: var(--cf-orange) !important;
+}
+
