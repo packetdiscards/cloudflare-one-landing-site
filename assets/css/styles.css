@@ -25,6 +25,18 @@
   color: #fff;
 }
 
+.btn-outline-cf-orange {
+  background-color: transparent;
+  border-color: var(--cf-orange);
+  color: var(--cf-orange);
+}
+
+.btn-outline-cf-orange:hover {
+  background-color: var(--cf-orange);
+  border-color: var(--cf-orange);
+  color: #fff;
+}
+
 .btn-outline-light-cf {
   border-color: rgba(255, 255, 255, 0.5);
   color: #fff;
@@ -51,5 +63,11 @@
 
 .bg-cf-orange {
   background-color: var(--cf-orange) !important;
+}
+
+.bg-glass {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
