@@ -31,11 +31,11 @@
         <div class="container">
             <div>
                 <ul class="nav nav-tabs mt-4" role="tablist">
-                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-1">Network Level DDoS</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-2">Application Layer DDoS</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-1">Network Level DDoS</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-2">Application Layer DDoS</a></li>
                 </ul>
                 <div class="tab-content">
-                    <div class="tab-pane" role="tabpanel" id="tab-1">
+                    <div class="tab-pane active" role="tabpanel" id="tab-1">
                         <div class="py-4">
                             <h3 class="fw-bold mb-3">Summary</h3>
                             <p class="text-muted mb-4">Cloudflare Magic Transit is a network-level security and performance solution that protects entire IP subnets (and therefore an on-premise or cloud data centre) by announcing them via BGP from Cloudflare's global edge. It replaces traditional hardware-based scrubbing with a massive, software-defined cloud network at unparalleled scale.</p>
@@ -60,30 +60,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <h4 class="fw-bold text-center mb-3"><span style="text-decoration:underline;">Architecture Diagram</span></h4><img class="img-fluid" width="1920" height="1080" src="assets/img/magic-transit-ref-arch-2.XvKY3pME_Z2GoNl.webp">
+                            <h4 class="fw-bold text-center mb-3"><span style="text-decoration:underline;">Conceptual Overview</span></h4><img class="img-fluid" width="1604" height="621" src="assets/img/image2-54.png">
+                            <h4 class="fw-bold text-center mb-3"><span style="text-decoration:underline;">Example architecture</span></h4><img class="img-fluid" width="1920" height="1080" src="assets/img/magic-transit-ref-arch-2.XvKY3pME_Z2GoNl.webp">
                             <div class="row g-4">
                                 <div class="col-md-4">
                                     <div class="border-4 border-primary p-3 border-start">
-                                        <h5 class="fw-bold text-primary">The Problem</h5>
+                                        <h5 class="fw-bold text-primary">Problem Statement</h5>
                                         <p class="small text-muted">On-premise hardware lacks the capacity to handle modern DDoS attacks and introduces latency by forcing traffic through central hubs.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="border-4 border-success p-3 border-start">
-                                        <h5 class="fw-bold text-success">The Solution</h5>
+                                        <h5 class="fw-bold text-success">Solution Proposal</h5>
                                         <p class="small text-muted">Cloudflare announces your IP space globally. Malicious traffic is dropped at the edge; clean traffic reaches you via GRE/IPsec tunnels.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="border-4 border-info p-3 border-start">
-                                        <h5 class="fw-bold text-info">The Outcomes</h5>
+                                        <h5 class="fw-bold text-info"><span style="color: rgb(240, 81, 13);">Intended Outcomes</span></h5>
                                         <p class="small text-muted">Continuous availability during attacks, improved user experience, and a simplified, cloud-native network architecture.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane active" role="tabpanel" id="tab-2">
+                    <div class="tab-pane" role="tabpanel" id="tab-2">
                         <div class="py-4">
                             <h3 class="fw-bold mb-3">Summary</h3>
                             <p class="text-muted mb-4">Cloudflare’s Application Layer (L7) DDoS protection defends web applications and APIs from sophisticated HTTP/HTTPS floods and bot attacks. By proxying traffic through its global network, Cloudflare uses real-time behavioral analysis and machine learning to identify and block malicious requests before they ever reach your origin server.</p>
@@ -112,19 +113,19 @@
                             <div class="row g-4">
                                 <div class="col-md-4">
                                     <div class="border-4 border-primary p-3 border-start">
-                                        <h5 class="fw-bold text-primary">The Problem</h5>
+                                        <h5 class="fw-bold text-primary">Problem Statement</h5>
                                         <p class="small text-muted">Sophisticated L7 attacks mimic human behavior to exhaust server resources, leading to application downtime and origin failure.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="border-4 border-success p-3 border-start">
-                                        <h5 class="fw-bold text-success">The Solution</h5>
+                                        <h5 class="fw-bold text-success">Solution Proposal</h5>
                                         <p class="small text-muted">HTTP requests are inspected by the Cloudflare edge. Malicious floods are challenged or blocked, while legitimate traffic is accelerated via CDN.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="border-4 border-info p-3 border-start">
-                                        <h5 class="fw-bold text-info">The Outcomes</h5>
+                                        <h5 class="fw-bold text-info"><strong><span style="color: rgb(240, 81, 13);">Intended Outcomes</span></strong></h5>
                                         <p class="small text-muted">Consistent application uptime, significantly reduced server costs, and protection against large-scale layer 7 campaigns.</p>
                                     </div>
                                 </div>
